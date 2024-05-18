@@ -93,7 +93,7 @@ def avatar_generator(ava_gender, i):
 st.header("°◌ Customer Persona ◌°")
 
 # Customer info by group
-summary = pd.read_csv('/data/summary_result.csv')
+summary = pd.read_csv('/workspaces/customer-persona-generator/data/summary_result.csv')
 group = summary.group
 group_pop = summary.group_size
 spend_level = summary.spending_level
