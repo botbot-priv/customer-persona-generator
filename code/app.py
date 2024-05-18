@@ -93,7 +93,7 @@ def avatar_generator(ava_gender, i):
 st.header("°◌ Customer Persona ◌°")
 
 # Customer info by group
-summary = pd.read_csv('../data/summary_result.csv')
+summary = pd.read_csv('/data/summary_result.csv')
 group = summary.group
 group_pop = summary.group_size
 spend_level = summary.spending_level
@@ -175,7 +175,7 @@ for i, tab in enumerate(tabs):
         
         with col1:
             # Name
-            name_df = pd.read_csv('../data/name_list.csv')
+            name_df = pd.read_csv('/data/name_list.csv')
             ava_name = random.choice(name_df[gender].to_list()) + ' ' + random.choice(name_df['last'].to_list())
             st.text("NAME")
             st.subheader(ava_name)
