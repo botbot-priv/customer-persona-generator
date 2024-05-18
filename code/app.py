@@ -82,7 +82,7 @@ def avatar_generator(ava_gender, i):
         )
 
         # Save to a file
-    image_svg = my_avatar.render("../pics/group_%s_persona_image.svg" %(i))
+    image_svg = my_avatar.render("pics/group_%s_persona_image.svg" %(i))
     image_svg = image_svg.replace("264px", "100%")
     image_svg = image_svg.replace("280px", "100%")
 
